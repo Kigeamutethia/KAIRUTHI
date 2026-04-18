@@ -13,10 +13,10 @@ export function Home() {
   return (
     <div>
       {/* Hero Section - Split Layout */}
-      <section className="relative py-20 bg-gradient-to-br from-white via-[#f8f9f7] to-[#e9ede8] overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-white via-[#f8f9f7] to-[#F5EFE6] overflow-hidden">
         {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#1e3c12]/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#95695e]/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
         
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -29,17 +29,17 @@ export function Home() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="inline-block px-4 py-2 bg-[#1e3c12]/10 rounded-full mb-6"
+                className="inline-block px-4 py-2 bg-[#6B4F3A]/10 rounded-full mb-6"
               >
-                <span className="text-[#1e3c12] text-sm font-medium">Established 2022 • Nairobi, Kenya</span>
+                <span className="text-[#2B2B2B] text-sm font-medium">Established 2022 • Nairobi, Kenya</span>
               </motion.div>
               
-              <h1 className="text-6xl mb-6 text-[#1e3c12] leading-tight">
-                Kairuthi & Co. <span className="text-[#95695e]">Advocates</span> LLP
+              <h1 className="text-6xl mb-6 text-[#2B2B2B] leading-tight">
+                Kairuthi & Co. <span className="text-[#6B4F3A]">Advocates</span> LLP
               </h1>
-              <div className="h-1 w-24 bg-gradient-to-r from-[#95695e] to-[#1d4a14] mb-6 rounded-full"></div>
+              <div className="h-1 w-24 bg-[#6B4F3A] mb-6 rounded-full"></div>
               
-              <p className="text-2xl text-[#95695e] mb-6 italic leading-relaxed">
+              <p className="text-2xl text-[#6B4F3A] mb-6 italic leading-relaxed">
                 Trusted Legal Counsel. Practical Solutions. Lasting Impact.
               </p>
               <p className="text-lg text-black/80 mb-4 leading-relaxed">
@@ -54,10 +54,10 @@ export function Home() {
               >
                 <Link
                   to="/contact"
-                  className="inline-block bg-gradient-to-r from-[#1d4a14] to-[#1e3c12] text-white px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group"
+                  className="inline-block bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group"
                 >
                   <span className="relative z-10">Get Legal Assistance</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#1d4a14] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <div className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-lg"></div>
                 </Link>
               </motion.div>
@@ -69,7 +69,7 @@ export function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="relative"
             >
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#95695e]/20 to-[#1d4a14]/20 rounded-2xl blur-2xl"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#6B4F3A]/20 to-[#4A5D4E]/20 rounded-2xl blur-2xl"></div>
               <img
                 src="https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
                 alt="Legal consultation"
@@ -90,12 +90,12 @@ export function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block px-4 py-2 bg-[#95695e]/10 rounded-full mb-4"
+              className="inline-block px-4 py-2 bg-[#6B4F3A]/10 rounded-full mb-4"
             >
-              <span className="text-[#95695e] text-sm font-medium">Our Strengths</span>
+              <span className="text-[#6B4F3A] text-sm font-medium">Our Strengths</span>
             </motion.div>
-            <h2 className="text-4xl text-center mb-4 text-[#1e3c12]">Why Choose Us</h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-[#95695e] to-[#1d4a14] mx-auto mb-6 rounded-full"></div>
+            <h2 className="text-4xl text-center mb-4 text-[#2B2B2B]">Why Choose Us</h2>
+            <div className="h-1 w-16 bg-[#6B4F3A] mx-auto mb-6 rounded-full"></div>
             <p className="text-center text-lg max-w-2xl mx-auto text-black/70">
               We believe in building long-term relationships founded on trust, responsiveness, and results.
             </p>
@@ -110,18 +110,18 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="text-center p-8 cursor-pointer bg-white rounded-xl shadow-lg border border-[#e9ede8] hover:border-[#95695e]/30 transition-all relative group"
+                className="text-center p-8 cursor-pointer bg-white rounded-xl shadow-lg border border-[#D8CFC4] hover:border-[#6B4F3A]/30 transition-all relative group"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#95695e]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6B4F3A]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
                 
                 <motion.div 
-                  className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#e9ede8] to-[#d5dbd3] rounded-2xl mb-6 shadow-md relative z-10"
+                  className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#F5EFE6] to-[#d5dbd3] rounded-2xl mb-6 shadow-md relative z-10"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <feature.icon className="w-10 h-10 text-[#1d4a14]" />
+                  <feature.icon className="w-10 h-10 text-[#4A5D4E]" />
                 </motion.div>
-                <h3 className="text-xl mb-3 text-[#1e3c12] font-semibold relative z-10">{feature.title}</h3>
+                <h3 className="text-xl mb-3 text-[#2B2B2B] font-semibold relative z-10">{feature.title}</h3>
                 <p className="text-black/70 relative z-10">{feature.description}</p>
               </motion.div>
             ))}
@@ -130,7 +130,7 @@ export function Home() {
       </section>
 
       {/* Our Commitment */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -152,7 +152,7 @@ export function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl mb-6 text-[#1e3c12]">Our Commitment</h2>
+              <h2 className="text-4xl mb-6 text-[#2B2B2B]">Our Commitment</h2>
               <p className="text-lg mb-6 leading-relaxed">
                 We believe in building long-term relationships founded on trust, responsiveness, and results. Our goal is to protect your interests while guiding you toward the best possible outcomes.
               </p>
@@ -161,10 +161,10 @@ export function Home() {
               </p>
               <Link
                 to="/about"
-                className="inline-block mt-8 bg-[#1d4a14] text-white px-8 py-3 rounded-lg hover:bg-[#1e3c12] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+                className="inline-block mt-8 bg-[#4A5D4E] text-white px-8 py-3 rounded-lg hover:bg-[#6B4F3A] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
               >
                 <span className="relative z-10">Learn More About Us</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
             </motion.div>
           </div>
@@ -174,8 +174,8 @@ export function Home() {
       {/* Practice Areas Preview */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-[#95695e]/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-[#1e3c12]/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-10 right-10 w-72 h-72 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -184,12 +184,12 @@ export function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block px-4 py-2 bg-[#1e3c12]/10 rounded-full mb-4"
+              className="inline-block px-4 py-2 bg-[#6B4F3A]/10 rounded-full mb-4"
             >
-              <span className="text-[#1e3c12] text-sm font-medium">Comprehensive Legal Services</span>
+              <span className="text-[#2B2B2B] text-sm font-medium">Comprehensive Legal Services</span>
             </motion.div>
-            <h2 className="text-4xl mb-4 text-[#1e3c12]">Our Practice Areas</h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-[#95695e] to-[#1d4a14] mx-auto mb-6 rounded-full"></div>
+            <h2 className="text-4xl mb-4 text-[#2B2B2B]">Our Practice Areas</h2>
+            <div className="h-1 w-16 bg-[#6B4F3A] mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-black/70 max-w-2xl mx-auto">
               We provide comprehensive legal services across multiple disciplines, ensuring expert guidance for all your legal needs.
             </p>
@@ -211,11 +211,11 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.03, y: -5 }}
-                className="bg-gradient-to-br from-[#e9ede8] to-[#f4f6f3] p-8 rounded-xl cursor-pointer shadow-md hover:shadow-2xl transition-all border border-[#e9ede8] hover:border-[#95695e]/20 relative group overflow-hidden"
+                className="bg-gradient-to-br from-[#F5EFE6] to-[#F5EFE6] p-8 rounded-xl cursor-pointer shadow-md hover:shadow-2xl transition-all border border-[#D8CFC4] hover:border-[#6B4F3A]/20 relative group overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#95695e]/5 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#6B4F3A]/5 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform"></div>
                 <div className="relative z-10">
-                  <h3 className="text-xl mb-3 text-[#1e3c12] font-semibold">{area.title}</h3>
+                  <h3 className="text-xl mb-3 text-[#2B2B2B] font-semibold">{area.title}</h3>
                   <p className="text-black/70 leading-relaxed">{area.desc}</p>
                 </div>
               </motion.div>
@@ -229,10 +229,10 @@ export function Home() {
             >
               <Link
                 to="/practice-areas"
-                className="inline-block bg-gradient-to-r from-[#1d4a14] to-[#1e3c12] text-white px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group"
+                className="inline-block bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group"
               >
                 <span className="relative z-10">View All Practice Areas</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#1d4a14] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
             </motion.div>
           </div>
@@ -240,9 +240,9 @@ export function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-gradient-to-br from-[#e9ede8] via-[#f4f6f3] to-[#e9ede8] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#95695e]/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1e3c12]/5 rounded-full blur-3xl"></div>
+      <section className="py-24 bg-gradient-to-br from-[#F5EFE6] via-[#f4f6f3] to-[#F5EFE6] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#6B4F3A]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
         
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
@@ -252,10 +252,10 @@ export function Home() {
               viewport={{ once: true }}
               className="inline-block px-4 py-2 bg-white/50 rounded-full mb-4 backdrop-blur-sm"
             >
-              <span className="text-[#95695e] text-sm font-medium">Client Success Stories</span>
+              <span className="text-[#6B4F3A] text-sm font-medium">Client Success Stories</span>
             </motion.div>
-            <h2 className="text-4xl mb-4 text-[#1e3c12]">Client Testimonials</h2>
-            <div className="h-1 w-16 bg-gradient-to-r from-[#95695e] to-[#1d4a14] mx-auto mb-6 rounded-full"></div>
+            <h2 className="text-4xl mb-4 text-[#2B2B2B]">Client Testimonials</h2>
+            <div className="h-1 w-16 bg-[#6B4F3A] mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-black/70">What our clients say about working with us</p>
           </div>
 
@@ -286,15 +286,15 @@ export function Home() {
                 whileHover={{ scale: 1.02, y: -5 }}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all cursor-pointer relative overflow-hidden border border-white/50"
               >
-                <div className="absolute top-0 left-0 w-20 h-20 bg-[#95695e]/5 rounded-full blur-2xl"></div>
-                <div className="text-6xl text-[#95695e]/20 mb-4 leading-none">"</div>
+                <div className="absolute top-0 left-0 w-20 h-20 bg-[#6B4F3A]/5 rounded-full blur-2xl"></div>
+                <div className="text-6xl text-[#6B4F3A]/20 mb-4 leading-none">"</div>
                 <p className="text-lg mb-6 text-black/80 italic leading-relaxed relative z-10">{testimonial.quote}</p>
                 <div className="flex items-center gap-4 relative z-10">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#95695e] to-[#1d4a14] flex items-center justify-center text-white font-semibold">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6B4F3A] to-[#4A5D4E] flex items-center justify-center text-white font-semibold">
                     {testimonial.author[0]}
                   </div>
                   <div>
-                    <p className="text-[#1e3c12] font-semibold">{testimonial.author}</p>
+                    <p className="text-[#2B2B2B] font-semibold">{testimonial.author}</p>
                     <p className="text-sm text-black/60">{testimonial.role}</p>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4 text-[#1e3c12]">How We Work</h2>
+            <h2 className="text-4xl mb-4 text-[#2B2B2B]">How We Work</h2>
             <p className="text-lg text-black/70 max-w-2xl mx-auto">
               Our structured approach ensures clear communication and effective results at every stage
             </p>
@@ -329,8 +329,8 @@ export function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl text-[#95695e] mb-4 opacity-50">{item.step}</div>
-                <h3 className="text-xl mb-3 text-[#1e3c12]">{item.title}</h3>
+                <div className="text-5xl text-[#6B4F3A] mb-4 opacity-50">{item.step}</div>
+                <h3 className="text-xl mb-3 text-[#2B2B2B]">{item.title}</h3>
                 <p className="text-black/70">{item.desc}</p>
               </motion.div>
             ))}
@@ -339,7 +339,7 @@ export function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-[#1e3c12] text-white">
+      <section className="py-24 bg-[#6B4F3A] text-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
@@ -356,7 +356,7 @@ export function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl mb-2 text-[#95695e]">{stat.number}</div>
+                <div className="text-5xl mb-2 text-[#F5EFE6]">{stat.number}</div>
                 <div className="text-lg text-white/80">{stat.label}</div>
               </motion.div>
             ))}
@@ -367,16 +367,16 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
-          <h2 className="text-4xl mb-6 text-[#1e3c12]">Ready to Get Started?</h2>
+          <h2 className="text-4xl mb-6 text-[#2B2B2B]">Ready to Get Started?</h2>
           <p className="text-xl mb-8 text-black/70 max-w-2xl mx-auto">
             Contact us today to schedule a consultation and discover how we can help you achieve your legal goals.
           </p>
           <Link
             to="/contact"
-            className="inline-block bg-[#1d4a14] text-white px-8 py-4 rounded-lg hover:bg-[#1e3c12] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+            className="inline-block bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:bg-[#6B4F3A] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
           >
             <span className="relative z-10">Contact Us</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </Link>
         </div>
       </section>

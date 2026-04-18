@@ -70,7 +70,7 @@ export function Contact() {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative py-32 bg-[#1e3c12] text-white">
+      <section className="relative py-32 bg-[#6B4F3A] text-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -103,19 +103,19 @@ export function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="text-center p-6 bg-[#e9ede8] rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer"
+                className="text-center p-6 bg-[#F5EFE6] rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer"
               >
                 <motion.div 
                   className="inline-flex items-center justify-center w-14 h-14 bg-white rounded-full mb-4"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <info.icon className="w-6 h-6 text-[#1d4a14]" />
+                  <info.icon className="w-6 h-6 text-[#4A5D4E]" />
                 </motion.div>
-                <h3 className="text-lg mb-2 text-[#1e3c12]">{info.title}</h3>
+                <h3 className="text-lg mb-2 text-[#2B2B2B]">{info.title}</h3>
                 <a
                   href={info.link}
-                  className="text-black/70 hover:text-[#95695e] transition-colors"
+                  className="text-black/70 hover:text-[#6B4F3A] transition-colors"
                 >
                   {info.details}
                 </a>
@@ -126,7 +126,7 @@ export function Contact() {
       </section>
 
       {/* Contact Form & Map */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
@@ -136,7 +136,7 @@ export function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl mb-6 text-[#1e3c12]">Send Us a Message</h2>
+              <h2 className="text-3xl mb-6 text-[#2B2B2B]">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block mb-2 text-black">
@@ -221,10 +221,10 @@ export function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#1d4a14] text-white px-8 py-4 rounded-lg hover:bg-[#1e3c12] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+                  className="w-full bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:bg-[#6B4F3A] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
                 >
                   <span className="relative z-10">Send Message</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </button>
               </form>
             </motion.div>
@@ -236,7 +236,7 @@ export function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl mb-6 text-[#1e3c12]">Visit Our Office</h2>
+              <h2 className="text-3xl mb-6 text-[#2B2B2B]">Visit Our Office</h2>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg h-[500px]">
                 <LocationMap 
                   latitude={-1.2536023499274551} 
@@ -246,16 +246,16 @@ export function Contact() {
               </div>
 
               <div className="mt-8 bg-white p-6 rounded-lg">
-                <h3 className="text-xl mb-4 text-[#1e3c12]">Schedule a Consultation</h3>
+                <h3 className="text-xl mb-4 text-[#2B2B2B]">Schedule a Consultation</h3>
                 <p className="text-black/70 mb-4">
                   Ready to discuss your legal needs? Contact us to schedule a consultation with one of our experienced attorneys.
                 </p>
                 <a
                   href="tel:0708209727"
-                  className="inline-block bg-[#1d4a14] text-white px-6 py-3 rounded-lg hover:bg-[#1e3c12] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+                  className="inline-block bg-[#4A5D4E] text-white px-6 py-3 rounded-lg hover:bg-[#6B4F3A] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
                 >
                   <span className="relative z-10">Call Now: 0708 209 727</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </a>
               </div>
             </motion.div>
@@ -267,7 +267,7 @@ export function Contact() {
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl text-[#1e3c12]">Frequently Asked Questions</h2>
+            <h2 className="text-3xl text-[#2B2B2B]">Frequently Asked Questions</h2>
             <p className="text-lg text-black/70 mt-4">Common questions about our services and processes</p>
           </div>
 
@@ -300,9 +300,9 @@ export function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-[#e9ede8] p-6 rounded-lg"
+                className="bg-[#F5EFE6] p-6 rounded-lg"
               >
-                <h3 className="text-lg mb-3 text-[#1e3c12]">{faq.question}</h3>
+                <h3 className="text-lg mb-3 text-[#2B2B2B]">{faq.question}</h3>
                 <p className="text-black/70 leading-relaxed">{faq.answer}</p>
               </motion.div>
             ))}
@@ -311,26 +311,26 @@ export function Contact() {
       </section>
 
       {/* Office Information */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl mb-6 text-[#1e3c12]">Office Information</h2>
+              <h2 className="text-3xl mb-6 text-[#2B2B2B]">Office Information</h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl mb-2 text-[#1e3c12]">Location</h3>
+                  <h3 className="text-xl mb-2 text-[#2B2B2B]">Location</h3>
                   <p className="text-black/70">
                     Our offices are conveniently located in Nairobi, providing easy access for clients across the city and surrounding areas.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2 text-[#1e3c12]">Parking</h3>
+                  <h3 className="text-xl mb-2 text-[#2B2B2B]">Parking</h3>
                   <p className="text-black/70">
                     Ample parking is available for clients visiting our offices. Please inform us in advance if you require special parking arrangements.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2 text-[#1e3c12]">Accessibility</h3>
+                  <h3 className="text-xl mb-2 text-[#2B2B2B]">Accessibility</h3>
                   <p className="text-black/70">
                     Our facilities are designed to be accessible to all clients. Please let us know if you have any specific accessibility requirements.
                   </p>
@@ -339,12 +339,12 @@ export function Contact() {
             </div>
 
             <div>
-              <h2 className="text-3xl mb-6 text-[#1e3c12]">Emergency Contact</h2>
+              <h2 className="text-3xl mb-6 text-[#2B2B2B]">Emergency Contact</h2>
               <p className="text-lg text-black/70 mb-6">
                 For urgent legal matters requiring immediate attention, please call our main line and indicate the urgent nature of your call. We have protocols in place to handle emergency situations.
               </p>
               <div className="bg-white p-6 rounded-lg">
-                <h3 className="text-xl mb-4 text-[#1e3c12]">After-Hours Support</h3>
+                <h3 className="text-xl mb-4 text-[#2B2B2B]">After-Hours Support</h3>
                 <p className="text-black/70 mb-4">
                   While our regular office hours are Monday to Friday, 8:00 AM to 5:00 PM, we understand that legal emergencies can arise at any time.
                 </p>

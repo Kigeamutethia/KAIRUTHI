@@ -2,8 +2,8 @@
 
 :root {
   --font-size: 16px;
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Open Sans', sans-serif;
+  --font-body: sans-serif;
   --background: #ffffff;
   --foreground: #000000;
   --card: #ffffff;

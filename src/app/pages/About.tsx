@@ -28,7 +28,7 @@ export function About() {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative py-32 bg-[#1e3c12] text-white">
+      <section className="relative py-32 bg-[#6B4F3A] text-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl mb-6 text-[#1e3c12]">Who We Are</h2>
+              <h2 className="text-4xl mb-6 text-[#2B2B2B]">Who We Are</h2>
               <p className="text-lg mb-6 leading-relaxed">
                 Kairuthi & Co. Advocates LLP is a trusted legal practice offering comprehensive legal services across multiple areas of law. Our firm was founded on the belief that quality legal representation should be accessible, reliable, and results-driven.
               </p>
@@ -85,9 +85,9 @@ export function About() {
       </section>
 
       {/* Our Values */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
-          <h2 className="text-4xl text-center mb-4 text-[#1e3c12]">Our Values</h2>
+          <h2 className="text-4xl text-center mb-4 text-[#2B2B2B]">Our Values</h2>
           <p className="text-center text-lg mb-16 max-w-2xl mx-auto">
             The principles that guide our practice and define our commitment to excellence.
           </p>
@@ -104,13 +104,13 @@ export function About() {
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all cursor-pointer"
               >
                 <motion.div 
-                  className="inline-flex items-center justify-center w-16 h-16 bg-[#e9ede8] rounded-full mb-4"
+                  className="inline-flex items-center justify-center w-16 h-16 bg-[#F5EFE6] rounded-full mb-4"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <value.icon className="w-8 h-8 text-[#1d4a14]" />
+                  <value.icon className="w-8 h-8 text-[#4A5D4E]" />
                 </motion.div>
-                <h3 className="text-xl mb-3 text-[#1e3c12]">{value.title}</h3>
+                <h3 className="text-xl mb-3 text-[#2B2B2B]">{value.title}</h3>
                 <p className="text-black/70 leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
@@ -122,7 +122,7 @@ export function About() {
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl mb-6 text-[#1e3c12]">Our Approach</h2>
+            <h2 className="text-4xl mb-6 text-[#2B2B2B]">Our Approach</h2>
             <p className="text-xl leading-relaxed mb-8">
               We combine legal knowledge with practical strategy, ensuring clear advice, strong advocacy, and effective solutions.
             </p>
@@ -134,10 +134,10 @@ export function About() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4 text-[#1e3c12]">Our Legal Team</h2>
+            <h2 className="text-4xl mb-4 text-[#2B2B2B]">Our Legal Team</h2>
             <p className="text-lg text-black/70 max-w-2xl mx-auto">
               Experienced advocates committed to delivering exceptional legal representation
             </p>
@@ -171,14 +171,14 @@ export function About() {
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer"
               >
                 <motion.div 
-                  className="w-24 h-24 bg-[#e9ede8] rounded-full mx-auto mb-4 flex items-center justify-center"
+                  className="w-24 h-24 bg-[#F5EFE6] rounded-full mx-auto mb-4 flex items-center justify-center"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <Users className="w-12 h-12 text-[#1d4a14]" />
+                  <Users className="w-12 h-12 text-[#4A5D4E]" />
                 </motion.div>
-                <h3 className="text-xl mb-2 text-[#1e3c12] text-center">{member.name}</h3>
-                <p className="text-[#95695e] mb-4 text-center">{member.specialty}</p>
+                <h3 className="text-xl mb-2 text-[#2B2B2B] text-center">{member.name}</h3>
+                <p className="text-[#6B4F3A] mb-4 text-center">{member.specialty}</p>
                 <p className="text-black/70 text-center leading-relaxed">{member.bio}</p>
               </motion.div>
             ))}
@@ -196,7 +196,7 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl mb-6 text-[#1e3c12]">Why Work With Us</h2>
+              <h2 className="text-4xl mb-6 text-[#2B2B2B]">Why Work With Us</h2>
               <div className="space-y-6">
                 {[
                   {
@@ -225,10 +225,10 @@ export function About() {
                     className="flex gap-4"
                   >
                     <div className="flex-shrink-0">
-                      <CheckCircle className="w-6 h-6 text-[#1d4a14]" />
+                      <CheckCircle className="w-6 h-6 text-[#4A5D4E]" />
                     </div>
                     <div>
-                      <h3 className="text-xl mb-2 text-[#1e3c12]">{item.title}</h3>
+                      <h3 className="text-xl mb-2 text-[#2B2B2B]">{item.title}</h3>
                       <p className="text-black/70">{item.desc}</p>
                     </div>
                   </motion.div>
@@ -253,25 +253,25 @@ export function About() {
       </section>
 
       {/* Our Commitment to Excellence */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl text-center mb-12 text-[#1e3c12]">Our Commitment to Excellence</h2>
+            <h2 className="text-4xl text-center mb-12 text-[#2B2B2B]">Our Commitment to Excellence</h2>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl mb-4 text-[#1e3c12]">Continuous Learning</h3>
+                <h3 className="text-2xl mb-4 text-[#2B2B2B]">Continuous Learning</h3>
                 <p className="text-lg text-black/70 leading-relaxed">
                   The legal landscape is constantly evolving. Our team stays current with the latest developments in law, ensuring we provide the most relevant and effective advice to our clients.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl mb-4 text-[#1e3c12]">Technology Integration</h3>
+                <h3 className="text-2xl mb-4 text-[#2B2B2B]">Technology Integration</h3>
                 <p className="text-lg text-black/70 leading-relaxed">
                   We leverage modern technology to enhance our services, streamline processes, and provide clients with efficient, transparent legal solutions.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl mb-4 text-[#1e3c12]">Community Engagement</h3>
+                <h3 className="text-2xl mb-4 text-[#2B2B2B]">Community Engagement</h3>
                 <p className="text-lg text-black/70 leading-relaxed">
                   Beyond our practice, we are committed to giving back to the community through pro bono work, legal education initiatives, and supporting local causes.
                 </p>

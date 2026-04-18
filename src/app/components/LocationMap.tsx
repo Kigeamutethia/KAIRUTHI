@@ -31,7 +31,7 @@ export function LocationMap({ latitude, longitude, locationName = 'Our Office' }
           href={mapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-[#1d4a14] px-4 py-2 rounded-lg shadow-lg hover:bg-[#e9ede8] transition-colors text-sm font-medium"
+          className="bg-white text-[#4A5D4E] px-4 py-2 rounded-lg shadow-lg hover:bg-[#F5EFE6] transition-colors text-sm font-medium"
         >
           View Larger Map
         </a>

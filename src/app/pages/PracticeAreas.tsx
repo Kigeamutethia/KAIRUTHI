@@ -258,13 +258,13 @@ export function PracticeAreas() {
           >
             <div className="sticky top-0 bg-white border-b border-black/10 p-6 flex items-start justify-between">
               <div className="flex items-center gap-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#e9ede8] rounded-lg flex-shrink-0">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-[#F5EFE6] rounded-lg flex-shrink-0">
                   {(() => {
                     const Icon = practiceAreas[selectedArea].icon;
-                    return <Icon className="w-6 h-6 text-[#1d4a14]" />;
+                    return <Icon className="w-6 h-6 text-[#4A5D4E]" />;
                   })()}
                 </div>
-                <h2 className="text-3xl text-[#1e3c12]">{practiceAreas[selectedArea].title}</h2>
+                <h2 className="text-3xl text-[#2B2B2B]">{practiceAreas[selectedArea].title}</h2>
               </div>
               <button
                 onClick={() => setSelectedArea(null)}
@@ -280,19 +280,19 @@ export function PracticeAreas() {
               </p>
 
               <div>
-                <h3 className="text-2xl mb-4 text-[#1e3c12]">Our Services Include:</h3>
+                <h3 className="text-2xl mb-4 text-[#2B2B2B]">Our Services Include:</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {practiceAreas[selectedArea].services.map((service) => (
                     <div key={service} className="flex items-start gap-2">
-                      <div className="w-2 h-2 bg-[#95695e] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-[#6B4F3A] rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-black/80">{service}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-[#e9ede8] p-6 rounded-lg">
-                <h3 className="text-xl mb-3 text-[#1e3c12]">Our Expertise</h3>
+              <div className="bg-[#F5EFE6] p-6 rounded-lg">
+                <h3 className="text-xl mb-3 text-[#2B2B2B]">Our Expertise</h3>
                 <p className="text-black/80 leading-relaxed">
                   {practiceAreas[selectedArea].expertise}
                 </p>
@@ -301,10 +301,10 @@ export function PracticeAreas() {
               <div className="flex justify-center pt-4">
                 <a
                   href="/contact"
-                  className="inline-block bg-[#1d4a14] text-white px-8 py-4 rounded-lg hover:bg-[#1e3c12] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+                  className="inline-block bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:bg-[#6B4F3A] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
                 >
                   <span className="relative z-10">Schedule a Consultation</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </a>
               </div>
             </div>
@@ -313,10 +313,10 @@ export function PracticeAreas() {
       )}
 
       {/* Page Header */}
-      <section className="relative py-32 bg-gradient-to-br from-[#1e3c12] via-[#1e3c12] to-[#2a5018] text-white overflow-hidden">
+      <section className="relative py-32 bg-gradient-to-br from-[#6B4F3A] via-[#1e3c12] to-[#3B4A3E] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-72 h-72 bg-[#95695e] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 left-10 w-72 h-72 bg-[#6B4F3A] rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -337,7 +337,7 @@ export function PracticeAreas() {
           >
             Legal Practice Areas
           </motion.h1>
-          <div className="h-1 w-24 bg-gradient-to-r from-[#95695e] to-white mb-6 rounded-full"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-[#6B4F3A] to-white mb-6 rounded-full"></div>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -353,8 +353,8 @@ export function PracticeAreas() {
       {/* Practice Areas Grid */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-[#95695e]/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#1e3c12]/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
         </div>
         
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -367,24 +367,24 @@ export function PracticeAreas() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 whileHover={{ scale: 1.03, y: -5 }}
-                className="bg-gradient-to-br from-[#e9ede8] to-[#f4f6f3] p-8 rounded-xl hover:shadow-2xl transition-all cursor-pointer border border-[#e9ede8] hover:border-[#95695e]/20 relative group overflow-hidden"
+                className="bg-gradient-to-br from-[#F5EFE6] to-[#F5EFE6] p-8 rounded-xl hover:shadow-2xl transition-all cursor-pointer border border-[#D8CFC4] hover:border-[#6B4F3A]/20 relative group overflow-hidden"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#95695e]/5 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#6B4F3A]/5 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform"></div>
                 
                 <motion.div 
                   className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl mb-6 shadow-md relative z-10"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <area.icon className="w-8 h-8 text-[#1d4a14]" />
+                  <area.icon className="w-8 h-8 text-[#4A5D4E]" />
                 </motion.div>
                 
-                <h3 className="text-xl mb-3 text-[#1e3c12] font-semibold relative z-10">{area.title}</h3>
+                <h3 className="text-xl mb-3 text-[#2B2B2B] font-semibold relative z-10">{area.title}</h3>
                 <p className="text-black/70 leading-relaxed mb-6 relative z-10">{area.description}</p>
                 
                 <button
                   onClick={() => setSelectedArea(index)}
-                  className="text-[#1d4a14] hover:text-[#1e3c12] transition-colors font-medium relative z-10 flex items-center gap-2 group/btn"
+                  className="text-[#4A5D4E] hover:text-[#2B2B2B] transition-colors font-medium relative z-10 flex items-center gap-2 group/btn"
                 >
                   Read More 
                   <motion.span
@@ -402,9 +402,9 @@ export function PracticeAreas() {
       </section>
 
       {/* Detailed Practice Areas */}
-      <section className="py-24 bg-[#e9ede8]">
+      <section className="py-24 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6">
-          <h2 className="text-4xl text-center mb-4 text-[#1e3c12]">Comprehensive Legal Solutions</h2>
+          <h2 className="text-4xl text-center mb-4 text-[#2B2B2B]">Comprehensive Legal Solutions</h2>
           <p className="text-center text-lg mb-16 max-w-2xl mx-auto text-black/70">
             Our multidisciplinary approach ensures you receive expert guidance across all areas of law
           </p>
@@ -435,12 +435,12 @@ export function PracticeAreas() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white p-8 rounded-lg"
               >
-                <h3 className="text-2xl mb-4 text-[#1e3c12]">{area.title}</h3>
+                <h3 className="text-2xl mb-4 text-[#2B2B2B]">{area.title}</h3>
                 <p className="text-lg text-black/70 mb-6 leading-relaxed">{area.description}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {area.services.map((service) => (
                     <div key={service} className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-[#95695e] rounded-full"></div>
+                      <div className="w-2 h-2 bg-[#6B4F3A] rounded-full"></div>
                       <span className="text-black/80">{service}</span>
                     </div>
                   ))}
@@ -454,7 +454,7 @@ export function PracticeAreas() {
       {/* Industry Focus */}
       <section className="py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6">
-          <h2 className="text-4xl text-center mb-4 text-[#1e3c12]">Industries We Serve</h2>
+          <h2 className="text-4xl text-center mb-4 text-[#2B2B2B]">Industries We Serve</h2>
           <p className="text-center text-lg mb-16 max-w-2xl mx-auto text-black/70">
             Deep expertise across multiple sectors
           </p>
@@ -476,9 +476,9 @@ export function PracticeAreas() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="bg-[#e9ede8] p-6 rounded-lg text-center"
+                className="bg-[#F5EFE6] p-6 rounded-lg text-center"
               >
-                <p className="text-[#1e3c12]">{industry}</p>
+                <p className="text-[#2B2B2B]">{industry}</p>
               </motion.div>
             ))}
           </div>
@@ -486,18 +486,18 @@ export function PracticeAreas() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#e9ede8]">
+      <section className="py-20 bg-[#F5EFE6]">
         <div className="max-w-[1400px] mx-auto px-6 text-center">
-          <h2 className="text-4xl mb-6 text-[#1e3c12]">Need Legal Assistance?</h2>
+          <h2 className="text-4xl mb-6 text-[#2B2B2B]">Need Legal Assistance?</h2>
           <p className="text-xl mb-8 text-black/70 max-w-2xl mx-auto">
             Our experienced team is ready to help you navigate your legal challenges with confidence.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#1d4a14] text-white px-8 py-4 rounded-lg hover:bg-[#1e3c12] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+            className="inline-block bg-[#4A5D4E] text-white px-8 py-4 rounded-lg hover:bg-[#6B4F3A] transition-all text-lg hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
           >
             <span className="relative z-10">Schedule a Consultation</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
         </div>
       </section>

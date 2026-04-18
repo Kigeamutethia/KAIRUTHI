@@ -34,23 +34,28 @@ export function Header() {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm transition-colors hover:text-[#95695e] ${
+              className={`relative group text-lg font-medium transition-colors hover:text-[#6B4F3A] ${
                 location.pathname === item.path
-                  ? 'text-[#95695e]'
+                  ? 'text-[#6B4F3A]'
                   : 'text-black'
               }`}
             >
               {item.name}
+              <span 
+                className={`absolute -bottom-1 left-0 h-[3px] bg-[#4A5D4E] transition-all duration-300 rounded-full ${
+                  location.pathname === item.path ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}
+              ></span>
             </Link>
           ))}
         </nav>
 
         <Link
           to="/contact"
-          className="bg-[#1d4a14] text-white px-6 py-2.5 rounded-lg hover:bg-[#1e3c12] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
+          className="bg-[#4A5D4E] text-white px-6 py-2.5 rounded-lg hover:bg-[#6B4F3A] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group"
         >
           <span className="relative z-10">Book a Consultation</span>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1e3c12] to-[#2a5018] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div className="absolute inset-0 bg-[#6B4F3A] opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </Link>
       </div>
     </motion.header>

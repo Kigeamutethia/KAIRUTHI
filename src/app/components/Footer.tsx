@@ -10,8 +10,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <ImageWithFallback 
-                src={logo} 
+              <ImageWithFallback
+                src={logo}
                 alt="Kairuthi & Co. Advocates LLP Logo"
                 className="h-18 w-auto object-contain"
               />
@@ -67,7 +67,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <Mail className="w-4 h-4" />
-                <span>info@kairuthi.co.ke</span>
+                <span>info-ke@kairuthiadvocates.com</span>
               </li>
               <li className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-4 h-4" />
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/20 text-center text-sm text-white/60">
-          <p>© {new Date().getFullYear()} Kairuthi & Co. Advocates LLP. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kairuthi & Co. Advocates. All rights reserved.</p>
         </div>
       </div>
     </footer>
