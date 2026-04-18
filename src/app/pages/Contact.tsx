@@ -14,7 +14,7 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create mailto link with form data
     const subject = encodeURIComponent(formData.subject || 'Inquiry from Website');
     const body = encodeURIComponent(
@@ -24,9 +24,9 @@ export function Contact() {
       `Subject: ${formData.subject}\n\n` +
       `Message:\n${formData.message}`
     );
-    
+
     const mailtoLink = `mailto:info-ke@kairuthiadvocates.co.ke?subject=${subject}&body=${body}`;
-    
+
     // Open email client
     window.location.href = mailtoLink;
   };
@@ -50,8 +50,8 @@ export function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      details: 'info@kairuthi.co.ke',
-      link: 'mailto:info@kairuthi.co.ke',
+      details: 'info-ke@kairuthiadvocates.com',
+      link: 'mailto:info-ke@kairuthiadvocates.com',
     },
     {
       icon: MapPin,
@@ -76,7 +76,7 @@ export function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl mb-6"
+            className="text-4xl md:text-5xl mb-6"
           >
             Contact Us
           </motion.h1>
@@ -105,7 +105,7 @@ export function Contact() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="text-center p-6 bg-[#F5EFE6] rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer"
               >
-                <motion.div 
+                <motion.div
                   className="inline-flex items-center justify-center w-14 h-14 bg-white rounded-full mb-4"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.5 }}
@@ -237,9 +237,9 @@ export function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl mb-6 text-[#2B2B2B]">Visit Our Office</h2>
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg h-[500px]">
-                <LocationMap 
-                  latitude={-1.2536023499274551} 
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[500px]">
+                <LocationMap
+                  latitude={-1.2536023499274551}
                   longitude={36.98644659558189}
                   locationName="Kairuthi & Co. Advocates LLP"
                 />

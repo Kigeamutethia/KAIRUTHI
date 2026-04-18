@@ -313,7 +313,7 @@ export function PracticeAreas() {
       )}
 
       {/* Page Header */}
-      <section className="relative py-32 bg-gradient-to-br from-[#6B4F3A] via-[#1e3c12] to-[#3B4A3E] text-white overflow-hidden">
+      <section className="relative py-32 bg-[#6B4F3A] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-72 h-72 bg-[#6B4F3A] rounded-full blur-3xl"></div>
@@ -333,7 +333,7 @@ export function PracticeAreas() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl mb-4"
+            className="text-4xl md:text-5xl mb-4"
           >
             Legal Practice Areas
           </motion.h1>

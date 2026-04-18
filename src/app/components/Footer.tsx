@@ -1,7 +1,7 @@
 import { Scale, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import logo from '../../imports/Gemini_Generated_Image_-removebg-preview.png';
+import logo from '../../imports/new-logo.png';
 
 export function Footer() {
   return (
@@ -13,7 +13,7 @@ export function Footer() {
               <ImageWithFallback
                 src={logo}
                 alt="Kairuthi & Co. Advocates LLP Logo"
-                className="h-18 w-auto object-contain"
+                className="h-48 w-auto object-contain brightness-0 invert"
               />
             </div>
             <p className="text-sm text-white/80">
