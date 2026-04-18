@@ -13,7 +13,7 @@ export function Footer() {
               <ImageWithFallback
                 src={logo}
                 alt="Kairuthi & Co. Advocates LLP Logo"
-                className="h-48 w-auto object-contain brightness-0 invert"
+                className="h-48 w-auto object-contain scale-110 origin-left brightness-0 invert"
               />
             </div>
             <p className="text-sm text-white/80">

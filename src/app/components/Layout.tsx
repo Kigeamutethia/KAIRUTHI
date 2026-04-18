@@ -16,12 +16,12 @@ function WhatsAppIcon() {
 
 function CalendlyIcon() {
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 24 24" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
       className="w-8 h-8 text-white fill-current"
     >
-      <path d="M20.24 12.01c0 4.56-3.7 8.25-8.25 8.25-4.56 0-8.25-3.69-8.25-8.25 0-4.55 3.69-8.24 8.25-8.24 2.11 0 4.04.8 5.48 2.11l2.58-2.58C18.01 1.25 15.17 0 11.99 0 5.37 0 0 5.37 0 12c0 6.63 5.37 12 11.99 12 6.63 0 12-5.37 12-12h-3.75z"/>
+      <path d="M20.24 12.01c0 4.56-3.7 8.25-8.25 8.25-4.56 0-8.25-3.69-8.25-8.25 0-4.55 3.69-8.24 8.25-8.24 2.11 0 4.04.8 5.48 2.11l2.58-2.58C18.01 1.25 15.17 0 11.99 0 5.37 0 0 5.37 0 12c0 6.63 5.37 12 11.99 12 6.63 0 12-5.37 12-12h-3.75z" />
     </svg>
   );
 }
@@ -35,7 +35,7 @@ export function Layout() {
       </main>
       <Footer />
       <ScrollRestoration />
-      
+
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
         {/* Calendly Button */}

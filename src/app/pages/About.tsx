@@ -103,7 +103,7 @@ export function About() {
                 whileHover={{ scale: 1.05, y: -8 }}
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-2xl transition-all cursor-pointer"
               >
-                <motion.div 
+                <motion.div
                   className="inline-flex items-center justify-center w-16 h-16 bg-[#F5EFE6] rounded-full mb-4"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.5 }}
@@ -170,7 +170,7 @@ export function About() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all cursor-pointer"
               >
-                <motion.div 
+                <motion.div
                   className="w-24 h-24 bg-[#F5EFE6] rounded-full mx-auto mb-4 flex items-center justify-center"
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
@@ -243,7 +243,7 @@ export function About() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1656646424842-3a002778be0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776525006/Gemini_Generated_Image_eh3phqeh3phqeh3p_ahlsat.png"
                 alt="Professional meeting"
                 className="rounded-lg shadow-lg w-full"
               />

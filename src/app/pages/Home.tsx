@@ -13,20 +13,17 @@ export function Home() {
 
   return (
     <div>
-      {/* Hero Section - Split Layout */}
-      <section className="relative py-20 overflow-hidden">
-        {/* Split Background */}
-        <div className="absolute inset-0 flex flex-col lg:flex-row">
-          <div className="flex-1 bg-[#6B4F3A]"></div>
-          <div className="flex-1 bg-white"></div>
-        </div>
+      {/* Hero Section - Full Bleed Split Layout */}
+      <section className="relative flex flex-col lg:flex-row min-h-[500px] lg:min-h-[600px] overflow-hidden">
 
-        {/* Decorative Elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left Side: Brown background with Text */}
+        <div className="w-full lg:w-1/2 bg-[#6B4F3A] relative flex items-center justify-end">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+
+          {/* Text Container - aligned to 1400px grid center */}
+          <div className="w-full max-w-[700px] px-6 py-12 lg:py-20 relative z-10 lg:pr-12 xl:pr-16">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -40,17 +37,17 @@ export function Home() {
               >
                 <span className="text-white text-sm font-medium">Established 2022 • Nairobi, Kenya</span>
               </motion.div>
-              
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white leading-tight">
-                Kairuthi & Co. <span className="text-[#F5EFE6]">Advocates</span> LLP
+                Kairuthi & Co. <span className="text-[#F5EFE6]">Advocates</span>
               </h1>
               <div className="h-1 w-24 bg-[#F5EFE6] mb-6 rounded-full"></div>
-              
+
               <p className="text-2xl text-[#F5EFE6] mb-6 italic leading-relaxed">
                 Trusted Legal Counsel. Practical Solutions. Lasting Impact.
               </p>
               <p className="text-lg text-white/80 mb-4 leading-relaxed">
-                Kairuthi & Co. Advocates LLP is a full-service law firm committed to providing strategic, reliable, and client-focused legal solutions. We combine legal expertise with a practical understanding of business and personal needs, ensuring every client receives clear guidance and strong representation.
+                Kairuthi & Co. Advocates is a full-service law firm committed to providing strategic, reliable, and client-focused legal solutions. We combine legal expertise with a practical understanding of business and personal needs, ensuring every client receives clear guidance and strong representation.
               </p>
               <p className="text-lg text-white/80 mb-8">
                 Established in 2022, we serve individuals, businesses, and institutions with professionalism, discretion, and dedication.
@@ -71,27 +68,32 @@ export function Home() {
                 </Link>
               </motion.div>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative"
-            >
-              <img
-                src={heroImage}
-                alt="Lawyer at Kairuthi & Co. Advocates"
-                className="w-full h-[400px] md:h-[600px] object-cover relative z-10"
-              />
-            </motion.div>
           </div>
+        </div>
+
+        {/* Right Side: Full Bleed Image */}
+        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 w-full h-full"
+          >
+            <img
+              src={heroImage}
+              alt="Lawyer at Kairuthi & Co. Advocates"
+              className="w-full h-full object-cover object-top"
+            />
+            {/* Gradient Overlay limited to left edge for blending, leaving image clear */}
+            <div className="absolute inset-y-0 left-0 w-1/2 md:w-1/3 bg-gradient-to-r from-[#6B4F3A] via-[#6B4F3A]/60 to-transparent pointer-events-none"></div>
+          </motion.div>
         </div>
       </section>
 
       {/* Why Choose Us */}
       <section className="py-24 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#e9ede8]/20 to-transparent"></div>
-        
+
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <motion.div
@@ -121,8 +123,8 @@ export function Home() {
                 className="text-center p-8 cursor-pointer bg-white rounded-xl shadow-lg border border-[#D8CFC4] hover:border-[#6B4F3A]/30 transition-all relative group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-[#6B4F3A]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl"></div>
-                
-                <motion.div 
+
+                <motion.div
                   className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#F5EFE6] to-[#d5dbd3] rounded-2xl mb-6 shadow-md relative z-10"
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
@@ -148,7 +150,7 @@ export function Home() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1775163024488-e88e4a71179f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776525007/Gemini_Generated_Image_ttkncattkncattkn_j2kkbw.png"
                 alt="Legal consultation"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -185,7 +187,7 @@ export function Home() {
           <div className="absolute top-10 right-10 w-72 h-72 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <motion.div
@@ -251,7 +253,7 @@ export function Home() {
       <section className="py-24 bg-gradient-to-br from-[#F5EFE6] via-[#f4f6f3] to-[#F5EFE6] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#6B4F3A]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#6B4F3A]/5 rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-[1400px] mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <motion.div
@@ -313,11 +315,11 @@ export function Home() {
       </section>
 
       {/* How We Work */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#6b4f3a]">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4 text-[#2B2B2B]">How We Work</h2>
-            <p className="text-lg text-black/70 max-w-2xl mx-auto">
+            <h2 className="text-4xl mb-4 text-[#ffffff]">How We Work</h2>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
               Our structured approach ensures clear communication and effective results at every stage
             </p>
           </div>
@@ -338,34 +340,8 @@ export function Home() {
                 className="text-center"
               >
                 <div className="text-4xl md:text-5xl text-[#6B4F3A] mb-4 opacity-50">{item.step}</div>
-                <h3 className="text-xl mb-3 text-[#2B2B2B]">{item.title}</h3>
-                <p className="text-black/70">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-24 bg-[#6B4F3A] text-white">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            {[
-              { number: '500+', label: 'Cases Handled' },
-              { number: '98%', label: 'Client Satisfaction' },
-              { number: '15+', label: 'Years Combined Experience' },
-              { number: '13', label: 'Practice Areas' },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl mb-2 text-[#F5EFE6]">{stat.number}</div>
-                <div className="text-lg text-white/80">{stat.label}</div>
+                <h3 className="text-xl mb-3 text-[#ffffff]">{item.title}</h3>
+                <p className="text-white/70">{item.desc}</p>
               </motion.div>
             ))}
           </div>

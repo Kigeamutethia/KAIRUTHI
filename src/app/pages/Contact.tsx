@@ -239,9 +239,9 @@ export function Contact() {
               <h2 className="text-3xl mb-6 text-[#2B2B2B]">Visit Our Office</h2>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[500px]">
                 <LocationMap
-                  latitude={-1.2536023499274551}
-                  longitude={36.98644659558189}
-                  locationName="Kairuthi & Co. Advocates LLP"
+                  latitude={-1.2730544}
+                  longitude={37.0004434}
+                  locationName="Kairuthi & Co. Advocates"
                 />
               </div>
 

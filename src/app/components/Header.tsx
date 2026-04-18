@@ -30,7 +30,7 @@ export function Header() {
           <ImageWithFallback 
             src={logo} 
             alt="Kairuthi & Co. Advocates LLP Logo"
-            className="h-40 w-auto object-contain"
+            className="h-24 w-auto object-contain scale-110 origin-left"
           />
         </Link>
 
