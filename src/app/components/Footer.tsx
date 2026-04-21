@@ -5,7 +5,7 @@ import logo from "../../imports/new-logo.png";
 
 export function Footer() {
 	return (
-		<footer className="bg-[#000000] text-white">
+		<footer className="bg-[#4a5d4e] text-white">
 			<div className="max-w-[1400px] mx-auto px-6 py-16">
 				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 					<div>
