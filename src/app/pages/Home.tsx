@@ -53,8 +53,8 @@ export function Home() {
 								</span>
 							</motion.div>
 
-							<h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-white leading-tight">
-								KAIRUTHI & Co. <span className="text-[#F5EFE6]">ADVOCATES</span>
+							<h1 className="text-2xl md:text-3xl lg:text-4xl mb-6 text-white leading-tight">
+								KAIRUTHI & CO. <span className="text-[#F5EFE6]">ADVOCATES</span>
 							</h1>
 							<div className="h-1 w-24 bg-[#F5EFE6] mb-6 rounded-full"></div>
 
@@ -186,19 +186,32 @@ export function Home() {
 							whileInView={{ opacity: 1, x: 0 }}
 							viewport={{ once: true }}
 							transition={{ duration: 0.8 }}>
-							<h2 className="text-4xl mb-6 text-[#2B2B2B]">Our Commitment</h2>
+							<h2 className="text-4xl mb-6 text-[#2B2B2B]">Founders Profile</h2>
 							<p className="text-lg mb-6 leading-relaxed">
-								We believe in building long-term relationships founded on trust,
-								responsiveness, and results. Our goal is to protect your
-								interests while guiding you toward the best possible outcomes.
+								Sheilla Kairuthi Mbatiah is the Founder of Kairuthi & Company
+								Advocates and an Advocate of the High Court of Kenya. She leads
+								the firm with a focus on integrity, precision, and practical,
+								results-driven legal solutions.
 							</p>
-							<p className="text-lg leading-relaxed">
-								Whether you're facing a complex legal challenge or seeking
-								preventive counsel, our team is dedicated to delivering
-								solutions that align with your objectives and values.
+							<p className="text-lg mb-6 leading-relaxed">
+								She also serves as an Associate at Litunda & Co. Advocates, with
+								experience spanning Commercial and Corporate Law, Employment and
+								Labour Relations, Family and Succession Law, Conveyancing, Debt
+								Recovery, and Litigation. Her diverse practice background is
+								strengthened by experience at leading law firms, the Kenya
+								Industrial Property Institute, and the Meru Law Courts.
 							</p>
-              <p>
-              </p>
+							<p className="text-lg mb-6 leading-relaxed">
+								Sheilla is skilled in Alternative Dispute Resolution (ADR),
+								focusing on efficient, strategic resolution of disputes through
+								negotiation and problem-solving.
+							</p>
+							<p className="text-lg mb-6 leading-relaxed">
+								She holds an LL.B from the University of Nairobi and a
+								Postgraduate Diploma from the Kenya School of Law. Her approach
+								is client-centered, strategic, and focused on delivering
+								practical legal solutions that empower clients.
+							</p>
 							<Link
 								to="/about"
 								className="inline-block mt-8 bg-[#4A5D4E] text-white px-8 py-3 rounded-lg hover:bg-[#6B4F3A] transition-all hover:scale-105 hover:shadow-xl active:scale-95 relative overflow-hidden group">
