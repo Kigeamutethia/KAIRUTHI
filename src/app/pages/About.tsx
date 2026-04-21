@@ -28,7 +28,7 @@ export function About() {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative py-32 bg-[#6B4F3A] text-white">
+      <section className="relative py-32 bg-[#5f4532] text-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -243,7 +243,7 @@ export function About() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776525006/Gemini_Generated_Image_eh3phqeh3phqeh3p_ahlsat.png"
+                src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776759238/image_hqleb2.png"
                 alt="Professional meeting"
                 className="rounded-lg shadow-lg w-full"
               />

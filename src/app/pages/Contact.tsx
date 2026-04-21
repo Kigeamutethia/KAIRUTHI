@@ -70,7 +70,7 @@ export function Contact() {
   return (
     <div>
       {/* Page Header */}
-      <section className="relative py-32 bg-[#6B4F3A] text-white">
+      <section className="relative py-32 bg-[#5f4532] text-white">
         <div className="max-w-[1400px] mx-auto px-6">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
