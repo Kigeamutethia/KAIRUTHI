@@ -99,7 +99,7 @@ export function Home() {
 						transition={{ duration: 1 }}
 						className="absolute inset-0 w-full h-full">
 						<img
-							src={heroImage}
+							src="https://res.cloudinary.com/dcnq9tnzv/image/upload/v1776781925/lawyer-hero_ysvyul.jpg"
 							alt="Lawyer at Kairuthi & Co. Advocates"
 							className="w-full h-full object-cover object-top"
 						/>

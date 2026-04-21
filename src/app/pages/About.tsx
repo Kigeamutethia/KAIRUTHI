@@ -259,7 +259,7 @@ export function About() {
 							viewport={{ once: true }}
 							transition={{ duration: 0.8 }}>
 							<img
-								src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776759238/image_hqleb2.png"
+								src="https://res.cloudinary.com/dcnq9tnzv/image/upload/v1776784185/edited_xux6zg.jpg"
 								alt="Professional meeting"
 								className="rounded-lg shadow-lg w-full"
 							/>
