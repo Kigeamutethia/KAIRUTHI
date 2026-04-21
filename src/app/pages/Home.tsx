@@ -32,7 +32,7 @@ export function Home() {
 			{/* Hero Section - Full Bleed Split Layout */}
 			<section className="relative flex flex-col lg:flex-row min-h-[500px] lg:min-h-[600px] overflow-hidden">
 				{/* Left Side: Brown background with Text */}
-				<div className="w-full lg:w-1/2 bg-[#5f4532] relative flex items-center justify-end">
+				<div className="w-full lg:w-1/2 bg-[#3d2b1f] relative flex items-center justify-end">
 					{/* Decorative Elements */}
 					<div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
 					<div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -387,7 +387,7 @@ export function Home() {
 			</section>
 
 			{/* How We Work */}
-			<section className="py-24 bg-[#5f4532]">
+			<section className="py-24 bg-[#3d2b1f]">
 				<div className="max-w-[1400px] mx-auto px-6">
 					<div className="text-center mb-16">
 						<h2 className="text-4xl mb-4 text-[#ffffff]">How We Work</h2>

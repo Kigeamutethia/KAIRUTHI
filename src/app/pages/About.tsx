@@ -31,14 +31,14 @@ export function About() {
 	return (
 		<div>
 			{/* Page Header */}
-			<section className="relative py-32 bg-[#5f4532] text-white">
+			<section className="relative py-32 bg-[#3d2b1f] text-white">
 				<div className="max-w-[1400px] mx-auto px-6">
 					<motion.h1
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
-						className="text-4xl md:text-5xl mb-6">
-						About the Firm
+						className="text-2xl md:text-3xl mb-6">
+						ABOUT THE FIRM
 					</motion.h1>
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
