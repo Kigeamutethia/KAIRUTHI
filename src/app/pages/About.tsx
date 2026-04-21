@@ -31,7 +31,7 @@ export function About() {
 	return (
 		<div>
 			{/* Page Header */}
-			<section className="relative py-32 bg-[#3d2b1f] text-white">
+			<section className="relative py-32 bg-[#3d2b1f] text-[#c9a96e]">
 				<div className="max-w-[1400px] mx-auto px-6">
 					<motion.h1
 						initial={{ opacity: 0, y: 20 }}

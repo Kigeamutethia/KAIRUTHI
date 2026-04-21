@@ -53,22 +53,22 @@ export function Home() {
 								</span>
 							</motion.div>
 
-							<h1 className="text-2xl md:text-3xl lg:text-4xl mb-6 text-white leading-tight">
-								KAIRUTHI & CO. <span className="text-[#F5EFE6]">ADVOCATES</span>
+							<h1 className="text-2xl md:text-3xl lg:text-4xl mb-6 text-[#c9a96e] leading-tight">
+								KAIRUTHI & CO. <span className="text-[#c9a96e]">ADVOCATES</span>
 							</h1>
 							<div className="h-1 w-24 bg-[#F5EFE6] mb-6 rounded-full"></div>
 
 							<p className="text-2xl text-[#F5EFE6] mb-6 leading-relaxed">
 								Trusted Legal Counsel. Practical Solutions. Lasting Impact.
 							</p>
-							<p className="text-lg text-white/80 mb-4 leading-relaxed">
+							<p className="text-lg text-[#f3f3f3]/80 mb-4 leading-relaxed">
 								Kairuthi & Co. Advocates is a full-service law firm committed to
 								providing strategic, reliable, and client-focused legal
 								solutions. We combine legal expertise with a practical
 								understanding of business and personal needs, ensuring every
 								client receives clear guidance and strong representation.
 							</p>
-							<p className="text-lg text-white/80 mb-8">
+							<p className="text-lg text-[#f3f3f3]/80 mb-8">
 								Established in 2022, we serve individuals, businesses, and
 								institutions with professionalism, discretion, and dedication.
 							</p>
@@ -77,7 +77,7 @@ export function Home() {
 								whileTap={{ scale: 0.95 }}>
 								<Link
 									to="/contact"
-									className="inline-block bg-[#F5EFE6] text-[#5f4532] px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group font-semibold">
+									className="inline-block bg-[#ffffff] text-[#3d2b1f] px-8 py-4 rounded-lg hover:shadow-2xl transition-all text-lg shadow-lg relative overflow-hidden group font-semibold">
 									<span className="relative z-10">Get Legal Assistance</span>
 									<div className="absolute inset-0 bg-[#4A5D4E] opacity-0 group-hover:opacity-100 transition-opacity"></div>
 									<div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -164,23 +164,81 @@ export function Home() {
 				</div>
 			</section>
 
-			{/* Our Commitment */}
-			<section className="py-24 bg-[#F5EFE6]">
+			{/* Our Commitments */}
+			<section className="py-24 bg-[#3d2b1f]">
 				<div className="max-w-[1400px] mx-auto px-6">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+					<div className="grid lg:grid-cols-2 gap-16 items-start">
 						<motion.div
-							className="h-full"
-							initial={{ opacity: 0, x: -30 }}
-							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							transition={{ duration: 0.8 }}>
-							<img
-								src="https://res.cloudinary.com/dgcpu6hxg/image/upload/q_auto/f_auto/v1776762733/WhatsApp_Image_2026-04-19_at_4.53.09_PM_-_Copy_3_dl6af4.jpg"
-								alt="Legal consultation"
-								className="rounded-lg shadow-lg w-full h-full object-cover"
-							/>
+							transition={{ duration: 0.8 }}
+							className="max-w-xl">
+							<div className="w-16 h-1 bg-[#c9a96e] mb-6"></div>
+
+							<h2 className="text-4xl mb-6 text-white font-semibold">
+								Our Commitment
+							</h2>
+
+							<p className="text-lg text-gray-200 leading-relaxed mb-10">
+								We build lasting relationships grounded in trust,
+								responsiveness, and measurable results—ensuring every client
+								receives strategic, reliable legal support.
+							</p>
 						</motion.div>
 
+						<motion.div
+							initial={{ opacity: 0, y: 40 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{ duration: 0.8, delay: 0.2 }}
+							className="grid sm:grid-cols-2 gap-6">
+							<div className="bg-white/5 p-6 rounded-2xl border border-white/10 h-full">
+								<h3 className="text-xl text-[#c9a96e] mb-2">
+									Client-Centered Approach
+								</h3>
+								<p className="text-gray-300 text-sm leading-relaxed">
+									Every strategy is tailored to your unique needs, priorities,
+									and long-term goals.
+								</p>
+							</div>
+
+							<div className="bg-white/5 p-6 rounded-2xl border border-white/10 h-full">
+								<h3 className="text-xl text-[#c9a96e] mb-2">Responsiveness</h3>
+								<p className="text-gray-300 text-sm leading-relaxed">
+									We maintain clear, timely communication so you are always
+									informed and confident.
+								</p>
+							</div>
+
+							<div className="bg-white/5 p-6 rounded-2xl border border-white/10 h-full">
+								<h3 className="text-xl text-[#c9a96e] mb-2">
+									Strategic Excellence
+								</h3>
+								<p className="text-gray-300 text-sm leading-relaxed">
+									Our team combines legal expertise with practical insight to
+									achieve optimal outcomes.
+								</p>
+							</div>
+
+							<div className="bg-white/5 p-6 rounded-2xl border border-white/10 h-full">
+								<h3 className="text-xl text-[#c9a96e] mb-2">
+									Integrity & Trust
+								</h3>
+								<p className="text-gray-300 text-sm leading-relaxed">
+									We uphold the highest ethical standards in every engagement
+									and decision.
+								</p>
+							</div>
+						</motion.div>
+					</div>
+				</div>
+			</section>
+
+			{/* Founders Profile */}
+			<section className="py-24 bg-[#F5EFE6]">
+				<div className="max-w-[1400px] mx-auto px-6">
+					<div className="items-center">
 						<motion.div
 							initial={{ opacity: 0, x: 30 }}
 							whileInView={{ opacity: 1, x: 0 }}

@@ -363,7 +363,7 @@ export function PracticeAreas() {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
-						className="text-3xl md:text-4xl mb-4">
+						className="text-[#c9a96e] text-3xl md:text-4xl mb-4">
 						LEGAL PRACTICE AREAS
 					</motion.h1>
 					<div className="h-1 w-24 bg-gradient-to-r from-[#6B4F3A] to-white mb-6 rounded-full"></div>
